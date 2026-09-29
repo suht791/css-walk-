@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(217, 247, 223);
+}
+
+.text {
+      font-family: "Hi Melody", sans-serif;
+    font-size: 40px;
+    color: #fac1d6;
+    text-align: left;
+    width: 45%;
+    margin-left: 150px;
+    line-height: 1.5;
+}
+
+.sentences {
+        font-family: "Hi Melody", sans-serif;
+    font-size: 30px;
+    color: #fea7cb;
+    text-align: left;
+    width: 45%;
+    margin-left: 150px;
+    line-height: 1.5;
+}
+
+.sentences, .text, .me{
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.me {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    position: absolute;
+    right: 100px;
+    top: 230px;
+    opacity: 80%;
+}
+
+ 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+   .back-button {
+    position: left;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 1s ease-in;
+}
+
+
+.back-button {
+    position: fixed;
+    bottom: 220px;
+    left: 76%;
+          opacity: 70%;
+    transform: translateX(-50%);
+    animation: fadeIn 1s ease-in;
+}
+
+.back-button img {
+    width: 300px;
+    display: block;
+}
+
+.back-button img:hover {
+    transform: scale(1.1);
+}

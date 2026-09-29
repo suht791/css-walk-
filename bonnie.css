@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.greenglasses{
+    font-family: "Hi Melody", sans-serif;
+      font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.redglasses{
+    font-family: "Hi Melody", sans-serif;
+      font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.brownglasses{
+    font-family: "Hi Melody", sans-serif;
+      font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.pinkglasses{
+    font-family: "Hi Melody", sans-serif;
+      font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.glasses-container {
+    font-family: "Hi Melody", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 0px;
+  margin-top: 100px;
+}
+
+.glasses-container img {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.glasses-container img:hover {
+    transform: scale(1.15);
+}
+
+
+.greenglasses,
+.redglasses,
+.brownglasses,
+.pinkglasses {
+    opacity: 0;
+    animation: popUp 0.7s ease forwards;
+}
+
+.greenglasses {
+    animation-delay: 0s;
+}
+
+.redglasses {
+    animation-delay: 0.5s;
+}
+
+.brownglasses {
+    animation-delay: 1s;
+}
+
+.pinkglasses {
+    animation-delay: 1.5s;
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
